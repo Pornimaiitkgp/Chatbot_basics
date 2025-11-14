@@ -1,0 +1,182 @@
+Fintech Product - Consumer FAQs
+
+1. Q: What is FintechApp?
+   A: FintechApp is a digital financial services platform that allows users to open accounts, make payments, transfer money, invest, and access other financial products.
+
+2. Q: How do I create an account?
+   A: Download the app or visit our website, click "Sign Up", provide your email or mobile number, create a password, and complete the KYC (identity verification) process.
+
+3. Q: What is KYC and why is it required?
+   A: KYC (Know Your Customer) verifies your identity to comply with laws and prevent fraud. You'll need to provide government ID, address proof, and sometimes a selfie.
+
+4. Q: How long does KYC verification take?
+   A: Verification typically takes from a few minutes to 2 business days depending on the documents and volume of requests.
+
+5. Q: What documents do I need for KYC?
+   A: Commonly accepted documents: government-issued ID (passport, driver’s license, national ID), proof of address (utility bill, bank statement), and a selfie for liveness check if requested.
+
+6. Q: Is my personal information secure?
+   A: Yes. We use encryption (TLS), secure data storage, and industry-standard security practices. We never share sensitive data without consent except as required by law.
+
+7. Q: How do I add money to my FintechApp wallet/account?
+   A: You can add funds via bank transfer (NEFT/IMPS/RTGS), debit/credit card, UPI (where supported), or by linking an external bank account.
+
+8. Q: Are there fees to deposit or withdraw money?
+   A: Fee structures vary. Some deposit methods are free, while instant transfers or card payments may incur small fees. Check the fees page in the app for exact charges.
+
+9. Q: How do I withdraw money to my bank account?
+   A: Go to "Withdraw" or "Transfer to Bank", enter the bank details or choose a linked account, specify the amount, and confirm. Withdrawals may take from minutes to 3 business days.
+
+10. Q: Are there limits on transactions?
+    A: Yes. Limits depend on account verification level and regulatory requirements. Common limits include daily/monthly deposit, withdrawal, and transfer caps. Check your account limits in the app.
+
+11. Q: How do I transfer money to another user?
+    A: Use the "Send Money" feature, enter the recipient's phone number, email, or account ID, enter the amount, and confirm the transfer.
+
+12. Q: Can I schedule recurring payments?
+    A: Many fintech platforms support recurring or automated payments for bills and subscriptions. Set it up under "Payments" or "Auto-pay" if available.
+
+13. Q: What payment methods are supported?
+    A: Typically UPI, debit/credit cards, netbanking, bank transfers, and sometimes third-party wallets. Merchant support may vary.
+
+14. Q: How do I pay a merchant or scan QR codes?
+    A: Open the "Pay" or "Scan" feature, scan the merchant QR code or enter merchant details, confirm the amount, and authenticate the payment.
+
+15. Q: How do I view my transaction history?
+    A: Open "Transactions" or "Activity" in the app. You can filter by date, type, and download statements (PDF/CSV) where supported.
+
+16. Q: How do I download my account statement?
+    A: Go to "Statements" or "Transactions", select the date range, and download the statement in PDF or CSV format.
+
+17. Q: What is two-factor authentication (2FA) and how do I enable it?
+    A: 2FA adds another verification step (OTP, authenticator app, or biometric). Enable it in "Security" or "Account Settings" for added protection.
+
+18. Q: What should I do if I forget my password?
+    A: Use "Forgot Password" on the login screen. You'll receive a reset link or OTP to your registered email/phone to set a new password.
+
+19. Q: How do I update my personal details (name, address, email, phone)?
+    A: Go to "Profile" or "Account Settings". Some fields can be updated directly; others (like name) may require ID verification or support assistance.
+
+20. Q: How do I change my linked bank account?
+    A: Remove the old bank account in "Linked Accounts" and add a new one. You may need to verify micro-deposits or re-run a KYC check.
+
+21. Q: Are there charges for international transfers?
+    A: International transfers usually incur conversion fees and transfer charges. Check the fees page for currency conversion rates and third-party charges.
+
+22. Q: How are foreign currency exchanges handled?
+    A: We use market rates plus a small spread/commission for conversions. The app will show the final rate and fees before you confirm.
+
+23. Q: Can I invest through the app?
+    A: Many fintech apps offer investment products like mutual funds, stocks, ETFs, or fixed deposits. Check the "Invest" section for available products and eligibility.
+
+24. Q: How is my investment protected?
+    A: Investment protection depends on the product type (e.g., bank deposits may be insured, equities are market-linked and not insured). Read product disclosures and risk statements carefully.
+
+25. Q: What fees are charged for investments?
+    A: Fees may include expense ratios (for funds), brokerage (for stocks), platform fees, and government taxes. Details are provided on each product page.
+
+26. Q: How do I apply for a loan or credit?
+    A: Navigate to "Loans" or "Credit", choose the product, fill out the application, submit required documents, and await approval. Eligibility depends on credit checks, income, and KYC.
+
+27. Q: What are loan interest rates and charges?
+    A: Rates depend on the loan type, tenure, and your credit profile. APRs, processing fees, late fees, and prepayment penalties (if any) will be disclosed before you accept.
+
+28. Q: How do I repay a loan?
+    A: Repay via auto-debit, bank transfer, UPI, or card payment. View your repayment schedule in "Loans" or "My Borrowings".
+
+29. Q: What happens if I miss a payment?
+    A: You may incur late fees, higher interest, and negative impact on your credit score. Contact support immediately to discuss restructuring or grace periods.
+
+30. Q: How do I get a physical or virtual debit/credit card?
+    A: Apply within the app under "Cards". Virtual cards are often issued instantly for online use; physical cards will be mailed to your address after verification.
+
+31. Q: What is a virtual card and is it secure?
+    A: A virtual card is a temporary or dedicated card number for online transactions. It reduces fraud by limiting exposure of your main card details.
+
+32. Q: How do I report a lost/stolen card or suspicious transaction?
+    A: Immediately block the card in-app and contact customer support. The platform will investigate and may reverse fraudulent charges per policies.
+
+33. Q: How long do refunds take?
+    A: Refund timelines depend on the merchant and payment method; typically 3–14 business days. The app will update the refund status in your transactions.
+
+34. Q: How do I dispute a transaction?
+    A: Open "Help" or "Disputes", select the transaction, provide details and supporting documents. The dispute team will investigate and update you.
+
+35. Q: Will I be charged GST or other taxes?
+    A: Applicable taxes (GST, VAT, withholding tax) may apply to fees or interest. Taxable income and obligations vary by jurisdiction—consult tax guidance or an advisor.
+
+36. Q: Can I link multiple bank accounts/cards?
+    A: Most platforms allow multiple linked accounts/cards. You can manage them under "Linked Accounts" or "Payment Methods".
+
+37. Q: Is there customer support and how can I contact them?
+    A: Yes. Contact options typically include in-app chat, email, phone, or a help center/FAQ page. Check "Support" in the app for contact details and hours of operation.
+
+38. Q: What are service hours for customer support?
+    A: Support hours vary. Some services provide 24/7 in-app chat, others operate during business hours. Check support details in the app.
+
+39. Q: How do I close my account?
+    A: Go to "Account Settings" → "Close Account" or contact support. Ensure any balance is withdrawn and pending transactions are cleared before closing.
+
+40. Q: Will my data be shared with third parties?
+    A: We may share data with payment processors, banks, regulatory bodies, or partners to provide services. Sharing is governed by the privacy policy and user consent.
+
+41. Q: How do I enable/disable transaction notifications?
+    A: Configure push, email, and SMS notifications under "Notifications" or "Preferences" in your account settings.
+
+42. Q: How does the app protect against fraud?
+    A: We use transaction monitoring, device fingerprinting, 2FA, encryption, and manual reviews to detect and prevent fraud.
+
+43. Q: What should I do if I see an unknown login or device?
+    A: Immediately change your password, log out of all sessions, enable 2FA, and contact support to investigate the activity.
+
+44. Q: Is the app free to use?
+    A: Core account features are often free. Premium features, instant transfers, or certain product fees may incur charges. Refer to the pricing/fees page.
+
+45. Q: How do I update KYC or re-verify my account?
+    A: Use the "KYC" or "Verification" section in the app and submit updated documents as requested.
+
+46. Q: Do you offer business or merchant accounts?
+    A: Many platforms offer business/merchant accounts with invoicing, payouts, and API integration. Check "Business" or "Merchant" sections for details.
+
+47. Q: Do you provide APIs for developers or merchants?
+    A: Fintech platforms often provide APIs for payments, payouts, and account management. API access typically requires registration, API keys, and compliance checks.
+
+48. Q: How do I enable auto-pay for bills?
+    A: Set up a biller or recurring instruction in "Payments" and authorize auto-debit via UPI mandate or card mandate.
+
+49. Q: What happens to my funds if the company shuts down?
+    A: Funds held in regulated, custodial accounts may be protected by local regulations. Check terms of service and custody details for how client funds are managed.
+
+50. Q: Where can I read the terms of service and privacy policy?
+    A: Links to the Terms of Service and Privacy Policy are available in the app footer or "Legal" section. Read them for complete rights and obligations.
+
+51. Q: How do I provide feedback or suggest a feature?
+    A: Use "Feedback" in the app, email product@yourcompany.com, or use the in-app survey/feedback form.
+
+52. Q: Are there referral programs or rewards?
+    A: Many fintech apps offer referral bonuses, cashback, or loyalty programs. Check "Rewards" or "Refer & Earn" for current offers and terms.
+
+53. Q: How is interest on balances calculated?
+    A: Interest (if applicable) is calculated based on the applicable rate and the account balance over time; specifics are in the product details.
+
+54. Q: Can I set spending limits or parental controls?
+    A: Some apps allow daily spend limits, card controls, or family accounts. Check "Cards" or "Controls" for these settings.
+
+55. Q: What compliance and regulations apply?
+    A: Fintech products are subject to banking, payments, and data protection regulations which vary by country (e.g., RBI/SEBI in India, FCA in the UK). The platform adheres to applicable laws.
+
+56. Q: How do I export my data for tax or accounting?
+    A: Export CSV/PDF statements from "Transactions" or "Reports" and consult your tax advisor for filing guidance.
+
+57. Q: How is my credit score affected by using your services?
+    A: Credit activity like loans or credit-line utilisation may be reported to credit bureaus and can impact your score. Routine account activity (payments, on-time repayment) influences credit health.
+
+58. Q: What is tokenization for card details?
+    A: Tokenization replaces card numbers with a unique token for secure storage and transactions, reducing fraud risk.
+
+59. Q: Do you support biometric login?
+    A: Many apps support fingerprint or Face ID where the device permits. Enable it under "Security".
+
+60. Q: How do I resolve app crashes or errors?
+    A: Clear app cache, update the app to the latest version, reinstall if needed, and contact support with logs or screenshots for persistent issues.
+
