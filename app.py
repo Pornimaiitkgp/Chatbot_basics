@@ -1,26 +1,32 @@
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 # data loading steps
 import pandas as pd
 from langchain_community.document_loaders import TextLoader #pip install langchain-community
 file_path = "faq.txt"  
 loader = TextLoader(file_path)
 data = loader.load() 
+
 # split text into chunks
 from langchain_text_splitters import RecursiveCharacterTextSplitter #pip install langchain-text-splitters
 text_splitter=RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)
 text=text_splitter.split_documents(data)
+
 # embeddings
 from dotenv import load_dotenv
 load_dotenv()
 os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
 from langchain_huggingface import HuggingFaceEmbeddings #pip install -qU langchain-huggingface #(requires sentence-transformers + torch)
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2") #this is a sentence transformer model #pip install sentence-transformers
+
 # Create vector store
 from langchain_chroma import Chroma
-vector_store = Chroma.from_documents(documents=text, embedding=embeddings)
+vector_store = Chroma.from_documents(documents=text, embedding=embeddings) #first all the documents will get embedded and then stored in chroma vector store
+
 # retriever
 retriever=vector_store.as_retriever(search_type="similarity", search_kwargs={"k":3})
+
 #prompt template
 from langchain_core.prompts import ChatPromptTemplate
 system_prompt = """You are a helpful customer support chatbot.
@@ -30,15 +36,18 @@ If the context does not contain the answer, respond with "I'm sorry, I don't hav
 prompt=ChatPromptTemplate.from_messages([
     ("system", system_prompt),
     ("human", "{input}")]) #from_messages(): Build a multi-role prompt easily
+
 # llm 
 from langchain_groq import ChatGroq #pip install langchain-groq
 groq_api_key=os.getenv("groq_api_key")
 llm=ChatGroq(groq_api_key=groq_api_key, model_name="groq/compound")
+
 # chain creation #connecting your prompt, llm and vector_store together
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain #pip install langchain-classic
 from langchain_classic.chains.retrieval import create_retrieval_chain
 question_answer_chain=create_stuff_documents_chain(llm,prompt)
 rag_chain=create_retrieval_chain(retriever, question_answer_chain)
+
 # chat history
 from langchain_core.prompts import MessagesPlaceholder
 from langchain_classic.chains import create_history_aware_retriever
@@ -48,26 +57,22 @@ contextualize_q_system_prompt = (
     "Do NOT answer the question here, just rewrite it clearly if needed.")
 contextualize_q_prompt = ChatPromptTemplate.from_messages([
         ("system", contextualize_q_system_prompt),
-        MessagesPlaceholder("chat_history"),
+        MessagesPlaceholder("chat_history"), #messagesplaceholder is used to insert chat history into the prompt
         ("human", "{input}"),])
 history_aware_retriever=create_history_aware_retriever(llm, retriever, contextualize_q_prompt)
-qa_prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        MessagesPlaceholder("chat_history"),
-        ("human", "{input}"),
-    ])
-question_answer_chain=create_stuff_documents_chain(llm, qa_prompt)
+question_answer_chain=create_stuff_documents_chain(llm, contextualize_q_prompt)
 rag_chain=create_retrieval_chain(history_aware_retriever, question_answer_chain)
+
 # Session-based Conversational RAG
 from langchain_community.chat_message_histories import ChatMessageHistory #pip install langchain-community
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
-store = {}
-def get_session_history(session_id: str) -> BaseChatMessageHistory:
+store = {} #dictionary
+def get_session_history(session_id: str) -> BaseChatMessageHistory: #basechatmessagehistory defines interface for chat history implementations #this function returns chat history object for given session id
     if session_id not in store:
-        store[session_id] = ChatMessageHistory()
+        store[session_id] = ChatMessageHistory() #all msgs of session stored in ChatMessageHistory object
     return store[session_id]
-conversational_rag_chain = RunnableWithMessageHistory(
+conversational_rag_chain = RunnableWithMessageHistory( # we can chat with the llm model based on the chat history with the help of RunnableWithMessageHistory class
     rag_chain,
     get_session_history,
     input_messages_key="input",
